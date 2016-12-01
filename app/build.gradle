@@ -78,6 +78,7 @@ android {
     }
 
     lintOptions {
+        abortOnError false
         //disable specific checks for specific paths
         lintConfig file("lint.xml")
         checkReleaseBuilds true
