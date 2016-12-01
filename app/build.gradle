@@ -77,7 +77,7 @@ android {
         }
     }
 
-    lintOptions {
+    /* lintOptions {
         abortOnError false
         //disable specific checks for specific paths
         lintConfig file("lint.xml")
@@ -89,7 +89,7 @@ android {
         // Ignore some specific checks, also some specific with path in lint.xml
         warning 'MissingTranslation'
         showAll true
-    }
+    } */
 }
 
 repositories {
