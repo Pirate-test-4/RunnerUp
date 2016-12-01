@@ -77,9 +77,9 @@ android {
         }
     }
 
-    /* lintOptions {
+     lintOptions {
         abortOnError false
-        //disable specific checks for specific paths
+        /*disable specific checks for specific paths
         lintConfig file("lint.xml")
         checkReleaseBuilds true
         //promote to error
@@ -88,8 +88,8 @@ android {
         warning 'MissingQuantity', 'ImpliedQuantity'
         // Ignore some specific checks, also some specific with path in lint.xml
         warning 'MissingTranslation'
-        showAll true
-    } */
+        showAll true*/
+    }
 }
 
 repositories {
@@ -119,7 +119,7 @@ dependencies {
 allprojects {
     tasks.withType(JavaCompile) {
         // options.compilerArgs << "-Xlint:deprecation";
-        // options.compilerArgs << "-Xlint:unchecked"
+         options.compilerArgs << "-Xlint:unchecked"
     }
 }
 
